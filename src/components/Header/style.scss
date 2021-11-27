@@ -15,7 +15,7 @@
 
     &--state {
       img {
-        margin-right: 1rem;
+        margin-right: 12px;
       }
     }
   }
@@ -34,12 +34,20 @@
 
   @media (max-width: $mobileLarge) {
     &__logo {
-      display: flex;
       flex-wrap: wrap;
+
+      &--ebac {
+        width: 100px; //aula 90px
+        margin-left: 20rem; //aula 2rem
+      }
     }
 
     &__city {
       margin-top: 1rem;
+    }
+
+    &__span {
+      margin-bottom: 0.4rem;
     }
   }
 }
