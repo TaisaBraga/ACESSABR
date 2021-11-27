@@ -1,0 +1,23 @@
+.pills {
+  &__container {
+    align-items: center;
+    background-color: var(--green);
+    border-radius: 2rem;
+    color: var(--white);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: 100;
+    margin-bottom: 0.5rem;
+    margin-right: 0.5rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    height: 2.9rem;
+    width: max-content;
+
+    &--active {
+      background-color: var(--lightGray);
+    }
+  }
+}
