@@ -1,8 +1,10 @@
 /* eslint-disable jsx-a11y/alt-text */
-import React, { useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import './style.scss'
 import imageDestack from '../../images/imagem-destaque.png'
 import Pills from '../../components/Pills'
+import { useParams } from 'react-router'
+import { LocationContext } from '../../contexts/locationContext'
 
 const PLACES = [
   'Praça',
@@ -17,11 +19,20 @@ const PLACES = [
 ]
 
 const Home = () => {
+  const { city, state } = useParams()
   const [selectedPill, setSelectedPill] = useState('')
+
+  const { setCity, setState } = useContext(LocationContext)
+
+  useEffect(() => {
+    setCity(city)
+    setState(state)
+  }, [city, setCity, setState, state])
+
   return (
     <main id="main-content" className="home__container">
       <div className="home__col">
-        <h1 className="home__title">São Paulo para todos</h1>
+        <h1 className="home__title">{city} para todos</h1>
         <div className="home__image home__image--destack hide-desktop">
           <img src={imageDestack} />
         </div>

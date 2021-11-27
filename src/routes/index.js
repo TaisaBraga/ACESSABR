@@ -3,19 +3,22 @@ import {
   Routes as Switch,
   Route
 } from 'react-router-dom'
-
 import Home from '../pages/HOME'
+import { LocationContext } from '../contexts/locationContext'
+import { useState } from 'react'
+import Header from '../components/Header'
 
 const Routes = props => {
+  const [city, setCity] = useState('')
+  const [state, setState] = useState('')
+
   return (
-    //Controle de rota
-    <Router>
-      {/* Permite com que troque de URL */}
+    <LocationContext.Provider value={{ city, setCity, state, setState }}>
+      <Header />
       <Switch>
-        {/* <Route path="/:state/:city" element={<Home city={props.city} />} /> */}
-        <Route path="/sp/sao-paulo" element={<Home city={props.city} />} />
+        <Route path="/:state/:city" element={<Home />} />
       </Switch>
-    </Router>
+    </LocationContext.Provider>
   )
 }
 
