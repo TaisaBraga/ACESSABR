@@ -9,9 +9,9 @@ import { LocationContext } from '../../contexts/locationContext'
 const PLACES = [
   'Praça',
   'Parque',
-  'Igreja',
+  'Teatro',
   'Hotel',
-  'Restaurante',
+  'Mercado',
   'Zoológico',
   'Farmácia',
   'Loja',
