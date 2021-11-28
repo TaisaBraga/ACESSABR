@@ -2,7 +2,8 @@
 
 ​	Projeto elaborado por[ Marcelo Cavalcante](https://github.com/cavalcantemmarcelo) e [Miguel Maia](https://github.com/mja-maia)
 
-![image-20211128071825523](C:\Users\taisa\AppData\Roaming\Typora\typora-user-images\image-20211128071825523.png)
+
+![image](https://user-images.githubusercontent.com/85700876/143764896-b4a0e99f-2228-481e-83d0-af9ade492c83.png)
 
 
 
