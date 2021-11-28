@@ -17,6 +17,8 @@ function Slider() {
     const fetchPlaces = async () => {
       const result = await api.get(`/places?category=${filteredPlaces}`)
 
+      console.log(result)
+
       if (result.status === 200) {
         setPlaces(result.data)
       }
@@ -25,13 +27,15 @@ function Slider() {
   }, [filteredPlaces])
   return (
     <Swiper
-      slidesPerView={places.length > 1 ? 1 : places.length}
       breakpoints={{
-        768: {
-          slidesPerView: places.length > 2 ? 2 : places.length
+        300: {
+          slidesPerView: 1
+        },
+        767: {
+          slidesPerView: 2
         },
         1024: {
-          slidesPerView: places.length > 4 ? 4 : places.length
+          slidesPerView: 4
         }
       }}
     >
