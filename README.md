@@ -3,7 +3,8 @@
 ​	Projeto elaborado por[ Marcelo Cavalcante](https://github.com/cavalcantemmarcelo) e [Miguel Maia](https://github.com/mja-maia)
 
 
-![image](https://user-images.githubusercontent.com/85700876/143764896-b4a0e99f-2228-481e-83d0-af9ade492c83.png)
+![image](https://user-images.githubusercontent.com/85700876/143764919-4f2a29eb-b647-4fb7-bb65-f6f66fcec58b.png)
+
 
 
 
